@@ -1,0 +1,17 @@
+        1. Understand the project.
+- A webapp to check all available occupied and booked venues
+
+    What can it do?
+        - Allow feeding of info.(blocks, rooms, halls)
+        - Show all institution's blocks.
+        - Show all floors of the blocks.
+        - Show all rooms in the blocks.
+        - Show all halls in the institution.
+        - Show all occupied venues.
+        - Show all unoccupied venues and not booked venues. (available)
+        - Show all unoccupied and booked vanues.
+            Info - time reserved (from - to)
+                 - who reserved (email or contact)
+                 - Any other details (event)
+        - Allow revoke booking.
+    
