@@ -1,0 +1,54 @@
+        1. UNDERSTAND THE PROJECT
+- A webapp to check all available occupied and booked venues
+
+    What can it do?
+        - Allow feeding of info.(blocks, rooms, halls)
+        - Allow only institutions students and staff.
+
+        - Show all institution's blocks.
+        - Show all floors of the blocks.
+        - Show all rooms in the blocks.
+        - Show all halls in the institution.
+        - Give class scheduled venues first priority.
+        - Show all occupied venues.
+        - Show all unoccupied venues and not booked venues. (available)
+        - Show all unoccupied and booked venues.
+            Info - time reserved (from - to)
+                 - who reserved (email or contact)
+                 - Any other details (event)
+        - Allow booking.
+        - Notify time to check in a venue.
+        - Notify time almost up.
+        - Enable waiting... (notify immediately available)
+        - Allow checkout before time.
+        - Allow revoke booking.
+        - Restrict booking one venue at same time.
+        - Limit number of rooms to book.
+        - A room can only be booked when available.
+        
+    
+    What will it have?
+        - Dashboard.
+            > log_in/out
+            > Profile.
+            > Rooms I've booked.
+            > Change light/dark 
+            > Change view list/grid(icons)
+        - List view.
+        - Icons view.
+        - Light mode 
+        - Dark Mode.
+    
+
+
+        2. DIVIDE AND CONQUER (how to do 1)
+            - use JSON to feed rooms
+                props name = block , floor, room, 
+            - use registration to restrict non students
+            - click block > floor > rooms 
+
+
+        3. RESEARCH
+
+
+        4. WRITE A PSEUDOCODE.
