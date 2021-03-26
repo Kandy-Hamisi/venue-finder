@@ -10,38 +10,61 @@
 <body>
     <div class="sidebar">
         <ul class="reserves">
-            <form>
+            <form class="form">
                 <div class="form__row">
-                    <label>From</label>
-                    <input type="time">
+                    <label class="form__label">From</label>
+                    <input class="form__input" placeholder="0000 hrs">
                 </div>
 
                 <div class=form__row>
-                    <label>To</label>
-                    <input type="time">
+                    <label class="form__label">To</label>
+                    <input class="form__input" placeholder="0000 hrs">
                 </div>
                 <button class="form__btn">OK</button>
             </form>
 
-            <li class="reserve">
+            <li class="reserve reserved--active">
                 <h2 class="reserve__title">Reserved FLT 24</h2>
                 <div class="reserve__details">
                     <span class="reserve__icon">⏳</span>
                     <span>FROM: </span>
                     <span class="reserve__value">1000</span>
-                    <span class="reserve__unit"> hrs</span>
+                    <span class="reserve__unit"> hours</span>
                 </div>
                 <div class="reserve__details">
                     <span class="reserve__icon">⌛</span>
                     <span>TO: </span>
                     <span class="reserve__value">0100</span>
-                    <span class="reserve__unit"> hrs</span>
+                    <span class="reserve__unit"> hours</span>
                 </div>
 
                 <div class="reserve__details">
                     <span class="reserve__icon">⏱</span>
                     <span>Duration: </span>
+                    <span class="reserve__value">3</span>
+                    <span class="reserve__unit"> hrs</span>
+                </div>
+            </li>
+
+            <li class="reserve reserved--waiting">
+                <h2 class="reserve__title">Reserved MLT 5</h2>
+                <div class="reserve__details">
+                    <span class="reserve__icon">⏳</span>
+                    <span>FROM: </span>
+                    <span class="reserve__value">1000</span>
+                    <span class="reserve__unit"> hours</span>
+                </div>
+                <div class="reserve__details">
+                    <span class="reserve__icon">⌛</span>
+                    <span>TO: </span>
                     <span class="reserve__value">0100</span>
+                    <span class="reserve__unit"> hours</span>
+                </div>
+
+                <div class="reserve__details">
+                    <span class="reserve__icon">⏱</span>
+                    <span>Duration: </span>
+                    <span class="reserve__value">3</span>
                     <span class="reserve__unit"> hrs</span>
                 </div>
             </li>
@@ -50,7 +73,36 @@
 
     </div>
 
-    <div id="layout"></div>
+    <div id="layout">
+        <article>
+            <h1>Features</h1>
+            <ul>
+              <li><a href="#s-one" id="one">One</a> </li>|<li> <a href="#s-two" id="two">Two</a> </li>| <li><a href="#s-three" id="three">Three</a></li>| <li><a href="#s-four" id="four">Four</a></li>
+            </ul>
+            <div>
+            <section id="s-one">
+              <h1>Section one</h1>
+              <p>Lorem ipsum dolor set amet.</p>
+              <span class="btn--container reserved--active">
+                  <button class="btn">Reserve</button>
+              </span>
+            </section>
+            <section id="s-two">
+              <h1>Section Two</h1>
+              <p>Lorem ipsum dolor set amet.</p>
+            </section>
+            <section id="s-three">
+              <h1>Section Three</h1>
+              <p>Lorem ipsum dolor set amet.</p>
+            </section>
+            <section id="s-four">
+              <h1>Section Four</h1>
+              <p>Lorem ipsum dolor set amet.</p>
+            </section>
+            </div>
+        
+            </article>
+    </div>
     
 </body>
 </html>
