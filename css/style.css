@@ -159,19 +159,14 @@ body {
 }
 
 .container__primary {
-    position: relative;
+
+
 }
 
-.container__secondary {   
-    display: block;
-    position: absolute;
-    top: 10px;
-    
-    background-color: yellow;
+.container__secondary {
+
 }
 
 .container__tertiary {
-    background-color: blue;
-    display: block;
-    display: none;
+
 }
