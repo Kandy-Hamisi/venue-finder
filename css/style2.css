@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
-    --main-color: #DD2F6E;
+    --main-color: #1D2231;
     --color-dark: #1D2231;
     --text-grey: #8390A2;
 }
@@ -199,6 +199,12 @@ main {
     color: var(--text-grey);
 }
 
+.active-block {
+    background: var(--main-color);
+    color: #fff;
+}
+
+/*
 .card-single:last-child {
     background: var(--main-color);
 }
@@ -208,7 +214,7 @@ main {
 .card-single:last-child div:last-child span {
     color: #fff;
 }
-
+*/
 .recent-grid {
     margin-top: 3.5rem;
     display: grid;
@@ -275,16 +281,16 @@ tr td:last-child {
     align-items: center;
 }
 
-.status.purple {
-    background: rebeccapurple;
-}
-
-.status.pink {
-    background: deeppink;
+.status.green {
+    background: green;
 }
 
 .status.orange {
-    background: orangered;
+    background: red;
+}
+
+.status.red {
+    background: orange;
 }
 
 .table-responsive {
