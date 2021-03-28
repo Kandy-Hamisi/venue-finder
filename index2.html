@@ -8,13 +8,14 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="css/style2.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
 
     <input type="checkbox" id="nav-toggle">
     <div class="sidebar">
         <div class="sidebar-brand">
-            <h2><span class="lab la-accusoft"></span><span></span></h2>
+            <h2><span class="lab la-accusoft"></span><span>Book Venue</span></h2>
         </div>
 
 
@@ -112,164 +113,135 @@
                 </div>
             </div>
 
-            <div class="recent-grid">
-                <div class="projects">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>Total Rooms</h3>
+            <div class="secondary-grid">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Total Rooms</h3>
 
-                            <!-- <button>See all <span class="las la-arrow-right"></span></button> -->
+                        <!-- <button>See all <span class="las la-arrow-right"></span></button> -->
+                    </div>
+
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table width="100%">
+                                <thead>
+                                    <tr>
+                                        <td>Room Number</td>
+                                        <td>Status</td>
+                                        <td>Reserve</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Flt 1</td>
+                                        <td><span class="status green"></span>
+                                            <span>Available</span>
+                                        </td>
+                                        <td><button class="btn-book">Book</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Flt 2</td>
+                                        <td><span class="status red"></span>
+                                            <span>Unavailable</span>
+                                        </td>
+                                        <td><button>Book</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Flt 3</td>
+                                        <td><span class="status orange"></span>
+                                            <span>Booked</span>
+                                        </td>
+                                        <td><button>Book</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Flt 4</td>
+                                        <td><span class="status green"></span>
+                                            <span>Available</span>
+                                        </td>
+                                        <td><button>Book</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Flt 5</td>
+                                        <td><span class="status red"></span>
+                                            <span>Unavailable</span>
+                                        </td>
+                                        <td><button>Book</button></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Flt 6</td>
+                                        <td><span class="status orange"></span>
+                                            <span>Booked</span>
+                                        </td>
+                                        <td><button>Book</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Flt 7</td>
+                                        <td><span class="status green"></span>
+                                            <span>Available</span>
+                                        </td>
+                                        <td><button>Book</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Flt 8</td>
+                                        <td><span class="status orange"></span>
+                                            <span>Booked</span>
+                                        </td>
+                                        <td><button>Book</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Flt 9</td>
+                                        <td><span class="status red"></span>
+                                            <span>Unavailable</span>
+                                        </td>
+                                        <td><button>Book</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table width="100%">
-                                    <thead>
-                                        <tr>
-                                            <td>Room Number</td>
-                                            <td>Status</td>
-                                            <td>Book</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Flt 1</td>
-                                            <td><span class="status green"></span>
-                                                <span>Available</span>
-                                            </td>
-                                            <td><button>Book</button></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Flt 2</td>
-                                            <td><span class="status red"></span>
-                                                <span>Unavailable</span>
-                                            </td>
-                                            <td><button>Book</button></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Flt 3</td>
-                                            <td><span class="status orange"></span>
-                                                <span>Booked</span>
-                                            </td>
-                                            <td><button>Book</button></td>
-                                        </tr>
-    
-                                       <tr>
-                                            <td>Flt 4</td>
-                                            <td><span class="status green"></span>
-                                                <span>Available</span>
-                                            </td>
-                                            <td><button>Book</button></td>
-                                        </tr>
-
-                                       <tr>
-                                            <td>Flt 5</td>
-                                            <td><span class="status red"></span>
-                                                <span>Unavailable</span>
-                                            </td>
-                                            <td><button>Book</button></td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>Flt 6</td>
-                                            <td><span class="status orange"></span>
-                                                <span>Booked</span>
-                                            </td>
-                                            <td><button>Book</button></td>
-                                        </tr>
-    
-                                        <tr>
-                                            <td>Flt 7</td>
-                                            <td><span class="status green"></span>
-                                                <span>Available</span>
-                                            </td>
-                                            <td><button>Book</button></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Flt 8</td>
-                                            <td><span class="status orange"></span>
-                                                <span>Booked</span>
-                                            </td>
-                                            <td><button>Book</button></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Flt 9</td>
-                                            <td><span class="status red"></span>
-                                                <span>Unavailable</span>
-                                            </td>
-                                            <td><button>Book</button></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                      
-                        </div>
+                    
                     </div>
                 </div>
+            
 
-                <div class="customers">
+                <div class="special-reserves">
                     <div class="card">
                         <div class="card-header">
-                            <h3>Halls</h3>
+                            <h3>Special Reserves</h3>
 
                             <!-- <button>See all <span class="las la-arrow-right"></span></button> -->
                         </div>
 
                         <div class="card-body">
-                            <div class="customer">
+                            <div class="special-reserve">
                                 <div class="info">
                                     <img src="img/2.jpg" width="40px" height="40px" alt="">
                                     <div>
-                                        <h4>Indoor Arena</h4>
-                                        <small>5000 people</small>
+                                        <h4>CT 2.4</h4>
+                                        <small>Developer Students Club</small>
                                     </div>
-                                </div>
-            
-                            </div>
-
-                            <div class="customer">
-                                <div class="customer">
-                                    <div class="info">
-                                        <img src="img/2.jpg" width="40px" height="40px" alt="">
-                                        <div>
-                                            <h4>Main Hall</h4>
-                                            <small>500 people</small>
-                                        </div>
-                                    </div>
-                
                                 </div>
                             </div>
 
-                            <div class="customer">
-                                <div class="customer">
-                                    <div class="info">
-                                        <img src="img/2.jpg" width="40px" height="40px" alt="">
-                                        <div>
-                                            <h4>CT Hall</h4>
-                                            <small>1000 people</small>
-                                        </div>
+                            <div class="card-body">
+                                <div class="info">
+                                    <img src="img/2.jpg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Studio room</h4>
+                                        <small>Freestate Dancers</small>
                                     </div>
-                
                                 </div>
                             </div>
-
-                            <div class="customer">
-                                <div class="customer">
-                                    <div class="info">
-                                        <img src="img/2.jpg" width="40px" height="40px" alt="">
-                                        <div>
-                                            <h4>FLT Hall</h4>
-                                            <small>1000 people</small>
-                                        </div>
-                                    </div>
-                
-                                </div>
-                            </div>
-
+                            
+                           <!--
                             <div class="customer">
                                 <div class="customer">
                                     <div class="info">
@@ -281,7 +253,7 @@
                                     </div>
                 
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                     </div>
@@ -290,5 +262,6 @@
             </div>
         </main>
     </div>
+
 </body>
 </html>

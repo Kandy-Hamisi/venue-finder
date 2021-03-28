@@ -204,18 +204,7 @@ main {
     color: #fff;
 }
 
-/*
-.card-single:last-child {
-    background: var(--main-color);
-}
-
-.card-single:last-child h1,
-.card-single:last-child div:first-child span 
-.card-single:last-child div:last-child span {
-    color: #fff;
-}
-*/
-.recent-grid {
+.secondary-grid {
     margin-top: 3.5rem;
     display: grid;
     grid-gap: 2rem;
@@ -298,7 +287,7 @@ tr td:last-child {
     overflow-x: auto;
 }
 
-.customer {
+.special-reserve {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -326,12 +315,7 @@ tr td:last-child {
     color: var(--text-grey);  
 }
 
-.contact span {
-    font-size: 1.2rem;
-    display: inline-block;
-    margin-left: .5rem;
-    color: var(--main-color);
-}
+
 
 
 @media only screen and (max-width: 1200px) {
