@@ -120,21 +120,7 @@ button:focus {
     flex: 1;
     height: 100%;
     background-color: #aaa;
-    margin-left: 3px;
-}
-
-.container__primary {
-
-
-}
-
-.container__secondary {
-
-
-}
-
-.container__tertiary {
-
+    margin-left: 3px; 
 }
 
 /* BOOKING FORM */
@@ -225,3 +211,4 @@ button:focus {
     visibility: hidden;
     opacity: 0;
 } 
+
