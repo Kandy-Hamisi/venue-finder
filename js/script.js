@@ -1,6 +1,7 @@
 ////////////////////////////////
 // MODAL WINDOW 
-
+const input = document.querySelectorAll('.modal__form--input');
+const form = document.querySelector('.modal__form');
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.btn--close-modal');
@@ -14,7 +15,10 @@ const openModal = function() {
 const closeModal = function() {
     modal.classList.add('hidden');
     overlay.classList.add('hidden');
+    input.forEach(el => el.value = '');
 }
+
+form.addEventListener('submit', closeModal);
 
 for (let i = 0; i < btnsOpenModal.length; i++)
     btnsOpenModal[i].addEventListener('click', openModal);
